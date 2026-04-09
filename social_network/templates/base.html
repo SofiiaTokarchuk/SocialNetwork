@@ -38,58 +38,64 @@
                     <div>
                         <img src="{% static 'images/logo/settings-logo.png' %}" alt=""><a href="">Налаштування</a>
                     </div>
-                    <img src="{% static 'images/logo/exit-logo.png' %}" alt=""><button> Вихід </button>
+                    <button><img src="{% static 'images/logo/exit-logo.png' %}" alt=""> Вихід </button>
                 </nav>
             </div>
         </header>
 
         <main>
-            <div class = "main-content">
+            <div class = "main-container">
+                
                 <div class = "side-block">  
-                    <div class = "profile">
-                        <div class = "profile-header">
-                            <div class="profile-avatar-container">
-                                <div class = "avatar-circle-wrapper">
-                                    <img class= "img-cover" src="{% static 'images/test_avatar.svg' %}" alt="">
+                    {% block side_block %}
+
+                        <div class = "profile">
+                            <div class = "profile-header">
+                                <div class="profile-avatar-container">
+                                    <div class = "avatar-circle-wrapper">
+                                        <img class= "img-cover" src="{% static 'images/test_avatar.svg' %}" alt="">
+                                    </div>
+                                    <div class= "user-status"></div>
                                 </div>
-                                <div class= "user-status"></div>
+
+                                <div class= "profile-info">
+                                    <p class = "profile-name">Lina Li</p>
+                                    <p class = "profile-username">@thelili</p>
+                                </div>
                             </div>
 
-                            <div class= "profile-info">
-                                <p class = "profile-name">Lina Li</p>
-                                <p class = "profile-username">@thelili</p>
+                            <div class = "profile-stats">
+                                <div class = "stats-container vertical-line">
+                                    <p class = "stats-value">566</p>
+                                    <p class= "stats-title">Дописи</p>
+                                </div>
+                                <div class = "stats-container vertical-line">
+                                    <p class = "stats-value">12.1K</p>
+                                    <p class= "stats-title">Читачі</p>
+                                </div>
+                                <div class = "stats-container">
+                                    <p class = "stats-value">222</p>
+                                    <p class= "stats-title">Друзі</p>
+                                </div>
                             </div>
+                            {% block profile %}
+
+                            {%endblock%}
                         </div>
 
-                        <div class = "profile-stats">
-                            <div class = "stats-container vertical-line">
-                                <p class = "stats-value">566</p>
-                                <p class= "stats-title">Дописи</p>
-                            </div>
-                            <div class = "stats-container vertical-line">
-                                <p class = "stats-value">12.1K</p>
-                                <p class= "stats-title">Читачі</p>
-                            </div>
-                            <div class = "stats-container">
-                                <p class = "stats-value">222</p>
-                                <p class= "stats-title">Друзі</p>
-                            </div>
-                        </div>
-                        {% block profile %}
+                        {% block additional_side_blocks %}
 
-                        {%endblock%}
-                    </div>
-
-                    {% block additional_side_blocks %}
+                        {% endblock %}
 
                     {% endblock %}
-                </div>
-
+                    </div>
+            
                 <div class = "content">
                     {% block content %}
 
                     {% endblock %}
                 </div>    
+                    
             </div>
         </main>
     </body>

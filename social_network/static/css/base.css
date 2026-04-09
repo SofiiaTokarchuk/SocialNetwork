@@ -3,11 +3,12 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 body{
     overflow-x: hidden;
 }
+
 main{
     display: flex;
     justify-content: center;
-    background-color: rgba(250, 248, 255, 1);
 }

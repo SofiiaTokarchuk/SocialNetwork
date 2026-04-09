@@ -1,4 +1,4 @@
-.main-content{
+.main-container{
     width: 100vw;
     height: 95vh;
     max-width: 1600px;
@@ -7,6 +7,7 @@
     justify-content: center;
     gap: 0.3rem;
     margin-top: 1.5vh;
+    background-color: rgba(250, 248, 255, 1);
 }
 
 .side-block{

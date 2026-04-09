@@ -2,7 +2,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 1.5vh;
+    padding-top: clamp(0.1rem, 1.5vh, 1rem);
     width: 24vw;
     max-width: 350px;
     height: 24vh;
@@ -55,6 +55,7 @@
     flex-direction: column;   
     max-width: 318px;
     max-height: 170px;
+    gap: clamp(0.1rem, 1.5vh, 1rem);
 }
 .messages{
     display: flex;
@@ -78,8 +79,47 @@
     flex-direction: column;   
     max-width: 350px;
     max-height: 186px;
+    gap: clamp(0.1rem, 1.5vh, 1rem);
 }
 
 .vertical-line{
     border-right: solid rgba(205, 206, 210, 1)  0.1vw;
+}
+
+.request-profile{
+    height: 4.4vh;
+    max-width: 318px;
+    max-height: 46px;
+    display: flex;
+    flex-direction: row;
+    gap: clamp(0.1rem, 0.8vw, 0.75rem);
+    
+}
+
+.profile-img-wrapper{
+    width: 4.4vh;
+    height: 4.4vh;
+    max-width: 46px;
+    max-height: 46px;
+}
+
+.profile-info{
+    height: 3.7vh;
+    /* width: 18vw; */
+    max-width: 260px;
+    max-height: 38px;
+    display: flex;
+    flex-direction: column;
+    gap: clamp(0.1rem, 0.3vh, 0.25rem);
+}
+
+.profile-name{
+    font-weight: 500;
+    color: rgba(7, 10, 28, 1);
+    font-size: clamp(0.1rem, 1.5vh, 1rem);
+}
+.followers-amount{
+    font-weight: 400;
+    color: rgba(129, 129, 141, 1);
+    font-size: clamp(0.1rem, 1.3vh, 0.875rem);
 }
