@@ -1,0 +1,22 @@
+.main-content{
+    width: 100vw;
+    height: 95vh;
+    max-width: 1600px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 0.3rem;
+    margin-top: 1.5vh;
+}
+
+.side-block{
+    display: flex;
+    flex-direction: column;
+    width: 24vw;
+    gap: 0.7vh;
+}
+
+.content{
+    width: 64vw;
+    height: 100%;
+}

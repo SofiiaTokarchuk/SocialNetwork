@@ -1,0 +1,90 @@
+.profile{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 24vw;
+    max-width: 350px;
+    height: 26vh;
+    max-height: 271px;
+    gap: clamp(0.1rem, 1.5vh, 1rem);
+    border: solid rgba(205, 206, 210, 1) 0.1vw;
+    border-radius: 0.6vw;
+    background-color: rgba(255, 255, 255, 1);
+}
+.profile-header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: clamp(0.1rem, 2.3vh, 1.5rem);
+    height: fit-content;
+}
+.profile-avatar-container{
+    position: relative;
+    display: flex;
+    width: 9vh;
+    height: 9vh;
+    max-width: 96px;
+    max-height: 96px;
+}
+.avatar-circle-wrapper{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+.img-cover{
+    width: 100%;
+    height: 100%;
+}
+.user-status{
+    width: 1.7vh;
+    height: 1.7vh;
+    position: absolute;
+    border: solid white 0.1vw;
+    border-radius: 50%;
+    background-color: rgba(34, 197, 94, 1);
+    top: 73%;
+    left: 73%;
+    max-width: 18px;
+    max-height: 18px;
+}
+.profile-info{
+    display: flex;
+    flex-direction: column;
+    height: 5vh;
+    justify-content: space-between;
+    align-items: center;
+    color: rgba(7, 10, 28, 1);
+    max-height: 55px;
+}
+.profile-name{
+    font-weight: 700;
+    font-size: clamp(0.1rem, 2vh, 1.5rem);
+}
+.profile-username{
+    font-weight: 500;
+    font-size: clamp(0.1rem, 1.5vh, 1rem);
+}
+.profile-stats{
+    display: flex;
+    flex-direction: row;
+}
+.stats-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 8vw;
+    height: 4.6vh;
+    max-width: 117px;
+    max-height: 48px;
+}
+.stats-value{
+    color: rgba(7, 10, 28, 1);
+    font-weight: 700;
+    font-size: clamp(0.1rem, 2vh, 1.5rem);;
+}
+.stats-title{
+    color: rgba(129, 129, 141, 1);
+    font-weight: 500;
+    font-size: clamp(0.1rem, 1.5vh, 1rem);
+}

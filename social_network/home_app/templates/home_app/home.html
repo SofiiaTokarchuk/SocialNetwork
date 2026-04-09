@@ -1,0 +1,42 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block links %}  
+    <link rel="stylesheet" href="{% static 'home_app/css/home.css' %}">
+{% endblock %}
+
+{% block additional_side_blocks %}
+    <div class = "requests">
+        <div class="side-block-header">
+            <div class= "title-container">
+                <div class="title-image-wrapper">
+                    <img class = "img-cover" src="{% static 'home_app/images/people.svg' %}" alt="">
+                </div>
+                <p>Запити</p>
+            </div>
+            <a class = "title-ref" href="">Дивитись всі</a>
+        </div>
+        <div class = "recommended-requests">
+
+        </div>
+    </div>
+
+    <div class = "messages">
+        <div class="side-block-header">
+            <div class= "title-container">
+                <div class="title-image-wrapper">
+                    <img class = "img-cover" src="{% static 'home_app/images/chat.svg' %}" alt="">
+                </div>
+                <p>Повідомлення</p>
+            </div>
+            <a class = "title-ref" href="">Дивитись всі</a>
+        </div>
+        <div class = "messages-container">
+
+        </div>
+    </div>
+    
+{% endblock %}
+
+{% block content %}
+{% endblock %}
